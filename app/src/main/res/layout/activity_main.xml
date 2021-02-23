@@ -6,13 +6,126 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".MainActivity">
+
+    <SeekBar
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_c"
+            android:layout_centerHorizontal="true"/>
+
     <TextView
+            android:text="0.0 C"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hello World!"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            android:id="@+id/tv_c"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/seekBar"
+            android:gravity="center"
+            android:textSize="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="176dp"
+            android:layout_marginStart="176dp"/>
+
+    <TextView
+            android:text="0.0 F"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_f"
+            android:textSize="24dp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_c"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="176dp"
+            android:layout_marginStart="176dp"/>
+
+    <TextView
+            android:text="0.0 K"
+            android:textSize="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_k"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_f"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="176dp"
+            android:layout_marginStart="176dp"/>
+
+    <SeekBar
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBar1"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_kzt"
+            />
+
+    <TextView
+            android:text="0 KZT"
+            android:textSize="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_kzt"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="176dp"
+            android:layout_marginStart="176dp"
+            android:layout_marginTop="50dp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_k"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/seekBar1"
+            />
+
+    <TextView
+            android:text="0 USD"
+            android:textSize="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_usd"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="176dp"
+            android:layout_marginStart="176dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/seekBar1"/>
+
+    <TextView
+            android:text="Time in Moscow: 15:50"
+            android:textSize="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_moscow"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="70dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="70dp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_usd"/>
+
+    <TextView
+            android:text="Time in Nur-sultan: 18:50"
+            android:textSize="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_astana"
+            android:layout_marginTop="30dp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_moscow"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="70dp"
+            android:layout_marginStart="70dp"/>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
